@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        #contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+      	.titulos {
+			background: linear-gradient(to right, #fc8340, #fce034);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center; /* Centrar verticalmente */
+            justify-content: space-between;
+            padding: 0 20px;
+            border: 2px solid white;
+            border-radius: 8px;
+            z-index: 2;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .titulos h1 {
+            text-align: left;
+            margin: 0;
+        }
+        .contenedorInfo {
+            background-color: #dcdcdc;
+            width: 100%;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 8px;
+            margin-top: -10px;
+            z-index: 1;
+            display: none;
+            font-weight: bold;
+        }
+        .buttons {
+            float: right;
+            background: none;
+            border: none;
+        }
+        .arrow-icon {
+            font-size: 35px;
+            color: #fcad0a;
+        }
+        .arrow-icon:hover {
+            color: #fc8340;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .titulos h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+
+        <!-- Contenedor 1 -->
+
+        <div class="titulos" id="titulo1">
+            <h1>¿GarciSlim es adecuado para mí?</h1>
+            <button class="buttons" id="mostrarInfo1">
+                <i class="fas fa-arrow-down arrow-icon"></i>
+            </button>
+        </div>
+      
+        <div id="informacion1" class="contenedorInfo">
+            <p>
+                Si tienes depósitos de grasa profunda que ninguna dieta o ejercicio parece eliminar, 
+                la respuesta es sí. <br> <br>
+                GarciSlim ha cambiado la vida de cientos de personas y está diseñado para disolver rápidamente 
+                la grasa, incluso en los casos más difíciles. <br> <br>
+                Pero si por alguna rara casualidad eso no sucede, lo cual es altamente improbable debido a la 
+                investigación respaldando esta solución, estás protegido por nuestra garantía de devolución de 
+                dinero incondicional de tres meses. <br> <br>
+                Eso demuestra cuánta confianza tenemos en el poder de GarciSlim. 
+            </p>
+        </div>
+
+        <!-- Contenedor 2 -->
+
+        <div class="titulos" id="titulo2">
+            <h1>¿Cómo funciona GarciSlim?</h1>
+            <button class="buttons" id="mostrarInfo2">
+                <i class="fas fa-arrow-down arrow-icon"></i>
+            </button>
+        </div>
+      
+        <div id="informacion2" class="contenedorInfo">
+            <p>
+                GarciSlim es el primer producto nutricional que mantiene una piel joven y saludable en el mundo, 
+                clínicamente probado para abordar la verdadera causa del aumento de peso inexplicado. <br> <br>
+                Un desorden en la leptina y déficit en tu metabolismo. <br> <br>
+                Al abordar la Leptina, se despierta un metabolismo dormido tanto en hombres como en mujeres.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu(menuId, buttonId) {
+            var infoDiv = document.getElementById(menuId);
+            var button = document.getElementById(buttonId);
+
+            if (infoDiv.style.display === "block") {
+                infoDiv.style.display = "none";
+                button.innerHTML = '<i class="fas fa-arrow-down arrow-icon"></i>';
+            } else {
+                infoDiv.style.display = "block";
+                button.innerHTML = '<i class="fas fa-arrow-up arrow-icon"></i>';
+            }
+        }
+
+        document.getElementById("mostrarInfo1").addEventListener("click", function() {
+            toggleMenu("informacion1", "mostrarInfo1");
+        });
+
+        document.getElementById("mostrarInfo2").addEventListener("click", function() {
+            toggleMenu("informacion2", "mostrarInfo2");
+        });
+    </script>
+</body>
+</html>

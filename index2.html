@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        #contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .titulos {
+            background: linear-gradient(to right, #fc8340, #fce034);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border: 2px solid white;
+            border-radius: 8px;
+            z-index: 2;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .titulos h1 {
+            text-align: left;
+            margin: 0;
+        }
+        .contenedorInfo {
+            background-color: #dcdcdc;
+            width: 100%;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 8px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+            font-weight: bold;
+            margin-top: -45px;
+        }
+        .buttons {
+            float: right;
+            background: none;
+            border: none;
+        }
+        .arrow-icon {
+            font-size: 35px;
+            color: #fcad0a;
+        }
+        .arrow-icon:hover {
+            color: #fc8340;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .titulos h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+
+        <!-- Contenedor 1 -->
+
+        <div class="titulos" id="titulo1">
+            <h1>¿GarciSlim es adecuado para mí?</h1>
+            <button class="buttons" id="mostrarInfo1">
+                <i class="fas fa-arrow-down arrow-icon"></i>
+            </button>
+        </div>
+      
+        <div id="informacion1" class="contenedorInfo">
+            <p>
+                <br> <br>
+                Si tienes depósitos de grasa profunda que ninguna dieta o ejercicio parece eliminar, 
+                la respuesta es sí. <br> <br>
+                GarciSlim ha cambiado la vida de cientos de personas y está diseñado para disolver rápidamente 
+                la grasa, incluso en los casos más difíciles. <br> <br>
+                Pero si por alguna rara casualidad eso no sucede, lo cual es altamente improbable debido a la 
+                investigación respaldando esta solución, estás protegido por nuestra garantía de devolución de 
+                dinero incondicional de tres meses. <br> <br>
+                Eso demuestra cuánta confianza tenemos en el poder de GarciSlim. 
+            </p>
+        </div>
+
+        <!-- Contenedor 2 -->
+
+        <div class="titulos" id="titulo2">
+            <h1>¿Cómo funciona GarciSlim?</h1>
+            <button class="buttons" id="mostrarInfo2">
+                <i class="fas fa-arrow-down arrow-icon"></i>
+            </button>
+        </div>
+      
+        <div id="informacion2" class="contenedorInfo">
+            <p>
+                <br> <br>
+                GarciSlim es el primer producto nutricional que mantiene una piel joven y saludable en el mundo, 
+                clínicamente probado para abordar la verdadera causa del aumento de peso inexplicado. <br> <br>
+                Un desorden en la leptina y déficit en tu metabolismo. <br> <br>
+                Al abordar la Leptina, se despierta un metabolismo dormido tanto en hombres como en mujeres.
+            </p>
+        </div>
+
+        <!-- Contenedor 3 -->
+
+        <div class="titulos" id="titulo3">
+            <h1>¿Qué contiene?</h1>
+            <button class="buttons" id="mostrarInfo3">
+                <i class="fas fa-arrow-down arrow-icon"></i>
+            </button>
+        </div>
+      
+        <div id="informacion3" class="contenedorInfo">
+            <p>
+                <br> <br>
+                Dentro de cada cápsula hay una mezcla única y patentada de fruta exótica y nutrientes 
+                naturales científicamente probados para regular la leptina y reparar el daño causado 
+                por décadas de acumulación de grasa. <br> <br>
+                Estos son: Garcinia cambogia, Cellulose, Magnesium Stearate.
+
+            </p>
+        </div>
+
+        <!-- Contenedor 4 -->
+
+        <div class="titulos" id="titulo4">
+            <h1>¿Es seguro GarciSlim?</h1>
+            <button class="buttons" id="mostrarInfo4">
+                <i class="fas fa-arrow-down arrow-icon"></i>
+            </button>
+        </div>
+      
+        <div id="informacion4" class="contenedorInfo">
+            <p>
+                <br> <br>
+                GarciSlim es una fórmula patentada completamente natural fabricada en los Estados Unidos en 
+                nuestras instalaciones registradas por la FDA y certificadas por GMP, utilizando maquinaria 
+                de última generación y bajo los estándares más estrictos y estériles. <br> <br>
+                Cada ingrediente es 100% a base de plantas y frutas exoticas, sin soja, sin lácteos, 
+                vegetariano y no transgénico, y se somete a inspecciones adicionales de terceros y control 
+                de calidad para garantizar una alta pureza. <br> <br>
+                El único efecto secundario reportado de GarciSlim es deshacerse de la ropa holgada y pasar 
+                horas en el probador probándose ropa nueva y ajustada y sexy. Como siempre, te recomiendo 
+                que muestres una botella de esto a tu médico antes de tomarlo, solo para estar seguro. 
+            </p>
+        </div>
+
+        <!-- Contenedor 5 -->
+
+        <div class="titulos" id="titulo5">
+            <h1>¿Y si no funciona para mí?</h1>
+            <button class="buttons" id="mostrarInfo5">
+                <i class="fas fa-arrow-down arrow-icon"></i>
+            </button>
+        </div>
+      
+        <div id="informacion5" class="contenedorInfo">
+            <p>
+                <br> <br>
+                Estamos seguros de que GarciSlim te brindará el apoyo que necesitas para disolver la grasa 
+                abdominal. <br> <br>
+                Sin embargo, también sabemos que ningún suplemento tiene una tasa de éxito del 100%. <br> <br>
+                Incluso si nos acercamos mucho, puede haber un número muy pequeño de clientes para quienes 
+                esto no funcione. <br> <br>
+                Es por eso que cada botella de GarciSlim viene con nuestra garantía personal de devolución 
+                de dinero del 100% durante 90 días. <br> <br>
+                Si por alguna razón no estás satisfecho con tus resultados, simplemente puedes devolver lo 
+                que no hayas utilizado y recibir un reembolso completo sin hacer preguntas. 
+            </p>
+        </div>
+
+        <!-- Contenedor 6 -->
+
+        <div class="titulos" id="titulo6">
+            <h1>¿Cuántas botellas debo pedir?</h1>
+            <button class="buttons" id="mostrarInfo6">
+                <i class="fas fa-arrow-down arrow-icon"></i>
+            </button>
+        </div>
+      
+        <div id="informacion6" class="contenedorInfo">
+            <p>
+                <br> <br>
+                Si tienes más de 35 años o tienes peso en exceso, se recomienda que tomes GarciSlim durante 
+                al menos tres a seis meses para que tenga suficiente tiempo para trabajar en todo tu cuerpo, 
+                normalizar tu leptina y tu metabolismo, alcanzar tu peso deseado y mantenerlo durante años 
+                en el futuro. 
+            </p>
+        </div>
+
+        <!-- Contenedor 7 -->
+
+        <div class="titulos" id="titulo7">
+            <h1>¿Cuál es la mejor forma de tomar GarciSlim?</h1>
+            <button class="buttons" id="mostrarInfo7">
+                <i class="fas fa-arrow-down arrow-icon"></i>
+            </button>
+        </div>
+      
+        <div id="informacion7" class="contenedorInfo">
+            <p>
+                <br> <br>
+                Toma dos cápsulas de GarciSlim con un vaso grande de agua todos los días.
+                Preferiblemente unos 20 minutos antes de comer.<br> <br>
+                Su exclusiva mezcla de ingredientes naturales comenzará a disolver la grasa incluso mientras 
+                duermes. 
+            </p>
+        </div>
+
+        <!-- Contenedor 8 -->
+
+        <div class="titulos" id="titulo8">
+            <h1>¿Es este un pago único?</h1>
+            <button class="buttons" id="mostrarInfo8">
+                <i class="fas fa-arrow-down arrow-icon"></i>
+            </button>
+        </div>
+      
+        <div id="informacion8" class="contenedorInfo">
+            <p>
+                <br> <br>
+                Sí, tu pedido hoy es un pago único sin suscripciones ni cargos ocultos.
+            </p>
+        </div>
+
+        <!-- Contenedor 9 -->
+
+        <div class="titulos" id="titulo9">
+            <h1>¿Cuánto tiempo tardará en llegar mi pedido?</h1>
+            <button class="buttons" id="mostrarInfo9">
+                <i class="fas fa-arrow-down arrow-icon"></i>
+            </button>
+        </div>
+      
+        <div id="informacion9" class="contenedorInfo">
+            <p>
+                <br> <br>
+                Enviamos los pedidos el mismo día en que se reciben. <br> <br>
+                Si estás en los Estados Unidos, puedes esperar recibir el paquete en un plazo de siete a 
+                diez días hábiles. Si estás fuera de los Estados Unidos, tomará más tiempo dependiendo de 
+                tu área local.
+            </p>
+        </div>
+
+        <!-- ----------- -->
+    </div>
+
+    <script>
+        function toggleMenu(menuId, buttonId) {
+            var infoDiv = document.getElementById(menuId);
+            var button = document.getElementById(buttonId);
+
+            if (infoDiv.style.maxHeight === "0px" || infoDiv.style.maxHeight === "") {
+                infoDiv.style.maxHeight = infoDiv.scrollHeight + "px";
+                button.innerHTML = '<i class="fas fa-arrow-up arrow-icon"></i>';
+            } else {
+                infoDiv.style.maxHeight = "0";
+                button.innerHTML = '<i class="fas fa-arrow-down arrow-icon"></i>';
+            }
+        }
+
+        document.getElementById("mostrarInfo1").addEventListener("click", function() {
+            toggleMenu("informacion1", "mostrarInfo1");
+        });
+
+        document.getElementById("mostrarInfo2").addEventListener("click", function() {
+            toggleMenu("informacion2", "mostrarInfo2");
+        });
+
+        document.getElementById("mostrarInfo3").addEventListener("click", function() {
+            toggleMenu("informacion3", "mostrarInfo3");
+        });
+
+        document.getElementById("mostrarInfo4").addEventListener("click", function() {
+            toggleMenu("informacion4", "mostrarInfo4");
+        });
+
+        document.getElementById("mostrarInfo5").addEventListener("click", function() {
+            toggleMenu("informacion5", "mostrarInfo5");
+        });
+
+        document.getElementById("mostrarInfo6").addEventListener("click", function() {
+            toggleMenu("informacion6", "mostrarInfo6");
+        });
+
+        document.getElementById("mostrarInfo7").addEventListener("click", function() {
+            toggleMenu("informacion7", "mostrarInfo7");
+        });
+
+        document.getElementById("mostrarInfo8").addEventListener("click", function() {
+            toggleMenu("informacion8", "mostrarInfo8");
+        });
+
+        document.getElementById("mostrarInfo9").addEventListener("click", function() {
+            toggleMenu("informacion9", "mostrarInfo9");
+        });
+    </script>
+</body>
+</html>
